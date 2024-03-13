@@ -200,12 +200,12 @@ namespace Jads.Tools
                     // Allow regenerating guid of folder because modifying it doesn't seem to be harmful
                     // if (IsDirectory(assetPath)) continue;
 
-                    // Skip scene files
-                    if (assetPath.EndsWith(".unity"))
-                    {
-                        skippedAssets.Add(assetPath);
-                        continue;
-                    }
+                    // // Skip scene files
+                    //if (assetPath.EndsWith(".unity"))
+                    //{
+                    //    skippedAssets.Add(assetPath);
+                    //    continue;
+                    //}
 
                     var metaAttributes = File.GetAttributes(metaPath);
                     var bIsInitiallyHidden = false;
